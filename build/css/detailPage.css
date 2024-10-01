@@ -1,0 +1,284 @@
+
+/* product detail popup style */
+
+.product_detail_head{
+  padding: 16px 20px;
+  border-radius: 6px;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+  margin-bottom: 13px;
+  }
+  .product_detail_head div small{
+    color: #000;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .product_detail_head div h6{
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  }
+  .product_detail_head a i {
+    color: #000000;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .product_popup_detail_box > figure{
+    background-color: #F7F7F7;
+    margin: 0px 20px 16px 20px;
+  }
+  .product_popup_description{
+    padding: 0px 20px;
+  }
+  .product_popup_description p{
+    color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 10px;
+  }
+  .poup_price_tags {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .popup_total_and_discount_price .poup_orignal_price {
+    color: #3D3D3D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  .popup_total_and_discount_price .poup_discount_price {
+    color: #3D3D3D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    text-decoration: line-through;
+    padding-left: 6px;
+    opacity: 0.5;
+  }
+  .poup_wish_list_btn i{
+  color: #3B3B3B;
+  font-size: 20px;
+  }
+  @media(max-width:540px){
+    .product_detail_poup .modal-dialog{
+  margin: 0px;
+    }
+    .product_detail_poup .modal-content{
+      border: unset;
+      border-radius: unset;
+    }
+    .product_detail_head {
+      position: sticky;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      z-index: 99;
+     
+  }
+  .popup_counter_item_parent{
+    position: sticky;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 99;
+    background-color: #fff;
+  }
+  }
+  
+  /* custom radio , checkbox input css */
+  .optionset_accordion_parent{
+    display: grid;
+    gap: 20px;
+    width: 100%;
+  }
+  .optionset_listing{
+  display: flex;
+  margin: 0px -10px;
+  flex-wrap: wrap;
+  }
+  .optionset_listing li{
+  padding: 10px 10px;
+  flex: 0 0 33.333%;
+    }
+  
+  .optionset_listing label {
+    border-radius: 6px;
+    border: 1px solid #E4E4E4;
+    background: #FFF;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    height: 100%;
+  }
+  .optionset_listing label figure{
+    padding-bottom: 5px;
+  }
+  .optionset_listing label small{
+    color: #000;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; 
+    letter-spacing: -0.029px;
+  }
+  .optionset_listing label span{
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; 
+    letter-spacing: -0.029px;
+  }
+  /* .optionset_listing label:before {
+    background-color:#3B3B3B;
+    color: #fff;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border: 1px solid #3B3B3B;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+  }
+  .optionset_listing input[type="radio"]:checked + label:before {
+    content: "✓";
+    background-color: #3B3B3B;
+    transform: scale(1);
+  }
+  
+  
+  */
+  
+  .optionset_listing input[type="radio"][id^="input"] {
+    display: none;
+  }
+  .optionset_listing input[type="checkbox"][id^="Checkbox"] {
+    display: none;
+  }
+  .optionset_listing input[type="checkbox"][id^="counter"] {
+    display: none;
+  }
+  .optionset_listing input[type="radio"]:checked + label {
+    border-color: #000000;
+  }
+  .optionset_listing input[type="checkbox"]:checked + label {
+    border-color: #000000;
+  }
+  .optionset_listing .option_selected{
+    border-color: #000000;
+  }
+  
+  @media(max-width:540px){
+    .optionset_listing li {
+      padding: 6px 6px;
+      flex: 0 0 50%;
+  }
+  }
+  
+  /* option set accordion design */
+  
+  .optionset_header_btn{
+    border-radius: 6px;
+  background: #F7F7F7 !important;
+  padding: 13px 10px !important;
+  box-shadow: unset !important;
+  }
+  .optionset_header_data span{
+    color: #3B3B3B;
+    font-size: 15.375px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; 
+    letter-spacing: -0.029px;
+  }
+  .optionset_header_data small{
+    color: #3B3B3B;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.029px;
+    padding-top: 4px;
+  }
+  
+  .accordion-button:not(.collapsed) i {
+    transform: rotate(-180deg); 
+    transition: transform 0.4s ease; 
+  }
+  .accordion-button::after {
+    display: none;
+  }
+  
+  /* popup counter button css */
+  .popup_counter_item_parent{
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 10px;
+  border-top:1px solid rgba(0, 0, 0, 0.12);
+  }
+  .popup_counter_item_btn{
+    height: 45px;
+    border: 1px solid #E3E3E3;
+    padding: 10px 10px;
+    border-radius: 4px;
+  }
+  .popup_counter_item_btn a {
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #000;
+  }
+  .popup_counter_item_btn a i {
+    font-weight: 600;
+  }
+  .popup_counter_item_btn span {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0px 15px;
+  }
+  .popup_item_add_btn{
+    border-radius: 6px;
+  border: 1px solid #3B3B3B;
+  height: 45px;
+  background: #282828;
+  color: #FFF;
+  
+  text-align: center;
+  font-size: 15.375px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; 
+  letter-spacing: -0.029px;
+  }
+  @media(max-width:540px) {
+    .popup_counter_item_parent {
+      grid-template-columns: 1fr;
+    }
+  }
+  
